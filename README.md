@@ -17,6 +17,7 @@
 - 8.0
 - 7.4
 - 7.2
+- 5.5
 
 ## Specifications:
 
@@ -43,7 +44,7 @@
 ```yml
 services:
     app:
-        image: jkaninda/nginx-php-fpm:8.3
+        image: farfys/nginx-php-fpm:8.3
         container_name: app
         restart: unless-stopped 
         user: www-data # Optional - for production usage    
@@ -93,7 +94,7 @@ docker exec -it app bash
 version: '3'
 services:
     app:
-        image: jkaninda/nginx-php-fpm
+        image: farfys/nginx-php-fpm
         container_name: app
         restart: unless-stopped 
         ports:
